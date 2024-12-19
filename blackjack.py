@@ -22,12 +22,13 @@ shuffle()
 cards_dealt = deal(2)
 card = cards_dealt[0]
 rank = cards[1]
-print(card)
 
 if rank == "A" :
     value = 11
 elif rank == "J" or rank == "Q" or rank == "K":
     value = 10
+else:
+    value = rank
 
 print(card)
     
