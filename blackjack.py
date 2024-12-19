@@ -21,7 +21,7 @@ def deal(number):
 shuffle()
 cards_dealt = deal(2)
 card = cards_dealt[0]
-rank = cards[1]
+rank = card[1]
 
 if rank == "A" :
     value = 11
@@ -30,5 +30,7 @@ elif rank == "J" or rank == "Q" or rank == "K":
 else:
     value = rank
 
-print(card)
+rank_dict = {"rank": rank, "value": value}
+
+print(rank_dict["rank"], rank_dict["value"])
     
